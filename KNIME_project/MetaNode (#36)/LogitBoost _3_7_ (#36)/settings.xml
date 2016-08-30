@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="ClassColumn" type="xstring" value="outcome"/>
+<config key="weka-optionhandler-settings">
+<entry key="Q" type="xboolean" value="false"/>
+<entry key="P" type="xstring" value="100"/>
+<entry key="F" type="xstring" value="0"/>
+<entry key="R" type="xstring" value="1"/>
+<entry key="L" type="xstring" value="-1.7976931348623157E308"/>
+<entry key="H" type="xstring" value="0.1"/>
+<entry key="S" type="xstring" value="1"/>
+<entry key="I" type="xstring" value="10"/>
+<entry key="D" type="xboolean" value="false"/>
+<entry key="W" type="xstring" value="weka.classifiers.trees.REPTree"/>
+<entry key="" type="xboolean" value="false"/>
+<entry key="M" type="xstring" value="2"/>
+<entry key="V" type="xstring" value="0.001"/>
+<entry key="N" type="xstring" value="3"/>
+<entry key="S*" type="xstring" value="1"/>
+<entry key="P*" type="xboolean" value="false"/>
+<entry key="L*" type="xstring" value="-1"/>
+<entry key="I*" type="xstring" value="0.0"/>
+<entry key="R*" type="xboolean" value="false"/>
+</config>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="CONFIGURED"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="ERROR"/>
+<entry key="message" type="xstring" value="Execute failed: Weka classifier can not work with given data. Reason: weka.classifiers.meta.LogitBoost: Cannot handle string attributes!"/>
+</config>
+<entry key="factory" type="xstring" value="org.knime.ext.weka37.classifier.WekaClassifierNodeFactory"/>
+<entry key="node-name" type="xstring" value="LogitBoost (3.7)"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME WEKA nodes (3.7)"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.ext.weka_3.7"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-bundle-version" type="xstring" value="2.12.0.0047562"/>
+<config key="factory_settings">
+<entry key="weka-class" type="xstring" value="weka.classifiers.meta.LogitBoost"/>
+<entry key="weka-version" type="xstring" value="3.7"/>
+</config>
+<entry key="name" type="xstring" value="LogitBoost (3.7)"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
