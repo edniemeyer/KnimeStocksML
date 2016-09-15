@@ -6,27 +6,21 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="target" type="xstring" value="gain"/>
+<entry key="target" type="xstring" value="Close"/>
 <config key="column_filter">
 <entry key="filter-type" type="xstring" value="STANDARD"/>
 <config key="included_names">
-<entry key="array-size" type="xint" value="13"/>
+<entry key="array-size" type="xint" value="6"/>
 <entry key="0" type="xstring" value="Open"/>
-<entry key="1" type="xstring" value="High"/>
-<entry key="2" type="xstring" value="Low"/>
-<entry key="3" type="xstring" value="Close"/>
-<entry key="4" type="xstring" value="Volume"/>
-<entry key="5" type="xstring" value="Adj Close"/>
-<entry key="6" type="xstring" value="outcome"/>
-<entry key="7" type="xstring" value="ho"/>
-<entry key="8" type="xstring" value="lo"/>
-<entry key="9" type="xstring" value="Close(-1)"/>
-<entry key="10" type="xstring" value="Close(-2)"/>
-<entry key="11" type="xstring" value="feat1"/>
-<entry key="12" type="xstring" value="feat2"/>
+<entry key="1" type="xstring" value="Close(-1)"/>
+<entry key="2" type="xstring" value="Close(-2)"/>
+<entry key="3" type="xstring" value="Close(-3)"/>
+<entry key="4" type="xstring" value="Close(-4)"/>
+<entry key="5" type="xstring" value="Close(-5)"/>
 </config>
 <config key="excluded_names">
-<entry key="array-size" type="xint" value="0"/>
+<entry key="array-size" type="xint" value="1"/>
+<entry key="0" type="xstring" value="gain"/>
 </config>
 <entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
 <config key="name_pattern">
@@ -53,10 +47,6 @@
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="EXECUTED"/>
-<config key="nodecontainer_message">
-<entry key="type" type="xstring" value="WARNING"/>
-<entry key="message" type="xstring" value="Input does not contain all learning columns (&quot;High&quot;, &quot;Low&quot;, &quot;Close&quot;,  ... &lt;7 more&gt;). Proceeding with the remaining learning columns."/>
-</config>
 <entry key="factory" type="xstring" value="org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeFactory"/>
 <entry key="node-name" type="xstring" value="Linear Regression Learner"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -87,6 +77,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="9050ffd6-e72a-4040-b4a6-8d1308f9fd88"/>
+<entry key="file_store_id" type="xstring" value="c6d7df39-a56d-44d1-9a3e-1dace33dc941"/>
 </config>
 </config>
