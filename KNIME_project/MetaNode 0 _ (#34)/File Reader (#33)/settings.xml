@@ -49,7 +49,6 @@
 <entry key="CombineMultDelims" type="xboolean" value="false"/>
 <entry key="SkipFirstLines" type="xlong" value="0"/>
 <entry key="NewLineInQuotes" type="xboolean" value="false"/>
-<entry key="TableName" type="xstring" value="20140315.csv"/>
 <entry key="hasColHdr" type="xboolean" value="false"/>
 <entry key="hasRowHdr" type="xboolean" value="false"/>
 <entry key="ignoreEmptyLines" type="xboolean" value="true"/>
@@ -61,6 +60,7 @@
 <entry key="SkipEmptyLine1" type="xboolean" value="true"/>
 </config>
 <config key="MissingPatterns"/>
+<config key="FormatParameter"/>
 <entry key="globalMissPattern" type="xstring" isnull="true" value=""/>
 <entry key="DecimalSeparator" type="xchar" value="."/>
 <entry key="ThrousandsSeparator" type="xchar" value="%%00000"/>
@@ -76,6 +76,7 @@
 <config key="0">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
 <entry key="SkipThisColumn" type="xboolean" value="false"/>
 <entry key="ColumnName" type="xstring" value="Date"/>
@@ -87,6 +88,7 @@
 <config key="1">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" isnull="true" value=""/>
+<entry key="FormatParameter" type="xstring" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
 <entry key="SkipThisColumn" type="xboolean" value="true"/>
 <entry key="ColumnName" type="xstring" value="Col1"/>
@@ -98,6 +100,7 @@
 <config key="2">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
+<entry key="FormatParameter" type="xstring" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
 <entry key="SkipThisColumn" type="xboolean" value="true"/>
 <entry key="ColumnName" type="xstring" value="Col2"/>
@@ -109,6 +112,7 @@
 <config key="3">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
+<entry key="FormatParameter" type="xstring" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
 <entry key="SkipThisColumn" type="xboolean" value="true"/>
 <entry key="ColumnName" type="xstring" value="Col3"/>
@@ -120,6 +124,7 @@
 <config key="4">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
+<entry key="FormatParameter" type="xstring" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
 <entry key="SkipThisColumn" type="xboolean" value="false"/>
 <entry key="ColumnName" type="xstring" value="Compra"/>
@@ -131,6 +136,7 @@
 <config key="5">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
+<entry key="FormatParameter" type="xstring" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
 <entry key="SkipThisColumn" type="xboolean" value="false"/>
 <entry key="ColumnName" type="xstring" value="Venda"/>
@@ -142,6 +148,7 @@
 <config key="6">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
+<entry key="FormatParameter" type="xstring" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
 <entry key="SkipThisColumn" type="xboolean" value="true"/>
 <entry key="ColumnName" type="xstring" value="Col6"/>
@@ -153,6 +160,7 @@
 <config key="7">
 <entry key="UserSetValues" type="xboolean" value="true"/>
 <entry key="MissValuePattern" type="xstring" value="?"/>
+<entry key="FormatParameter" type="xstring" value=""/>
 <entry key="ReadPossValsFromFile" type="xboolean" value="false"/>
 <entry key="SkipThisColumn" type="xboolean" value="true"/>
 <entry key="ColumnName" type="xstring" value="Col7"/>
@@ -171,6 +179,10 @@
 <entry key="width" type="xint" value="101"/>
 <entry key="height" type="xint" value="15"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="0"/>
+<entry key="defFontSize" type="xint" value="-1"/>
+<entry key="annotation-version" type="xint" value="-1"/>
 <config key="styles"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -180,7 +192,11 @@
 <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
-<entry key="node-bundle-version" type="xstring" value="2.12.2.0049834"/>
+<entry key="node-bundle-version" type="xstring" value="3.2.1.v201608161059"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-feature-version" type="xstring" value="3.2.1.v201608190927"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="File Reader"/>
 <entry key="hasContent" type="xboolean" value="true"/>
@@ -196,6 +212,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="56a817a6-ee54-4c7a-b54c-1d87ad1811b2"/>
+<entry key="file_store_id" type="xstring" value="c8d1614a-20b5-4a83-9c87-7bb9ee727a25"/>
 </config>
 </config>

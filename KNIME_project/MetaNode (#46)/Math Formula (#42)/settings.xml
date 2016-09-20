@@ -6,9 +6,9 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="append_column" type="xboolean" value="false"/>
-<entry key="replaced_column" type="xstring" value="erro"/>
 <entry key="expression" type="xstring" value="$Compra$-$Prediction (Compra)$"/>
+<entry key="replaced_column" type="xstring" value="erro"/>
+<entry key="append_column" type="xboolean" value="false"/>
 <entry key="convert_to_int" type="xboolean" value="false"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -18,7 +18,11 @@
 <entry key="node-bundle-name" type="xstring" value="KNIME Math Expression Node"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.ext.jep"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
-<entry key="node-bundle-version" type="xstring" value="2.12.0.0047514"/>
+<entry key="node-bundle-version" type="xstring" value="3.2.0.v201606131354"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Math Expression (JEP)"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.ext.jep.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-feature-version" type="xstring" value="3.2.0.v201606131354"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Math Formula"/>
 <entry key="hasContent" type="xboolean" value="true"/>
@@ -34,6 +38,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="6f106ce2-141b-462f-b0e7-5077315704e5"/>
+<entry key="file_store_id" type="xstring" value="a54db00e-e983-454e-bb06-34409cea6865"/>
 </config>
 </config>

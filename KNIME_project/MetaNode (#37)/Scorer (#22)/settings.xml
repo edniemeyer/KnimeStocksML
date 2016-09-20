@@ -42,6 +42,7 @@
 <entry key="flowVarPrefix" type="xstring" isnull="true" value=""/>
 <entry key="sortingReversed" type="xboolean" value="false"/>
 <entry key="sortingStrategy" type="xint" value="0"/>
+<entry key="ignore.missing.values" type="xboolean" value="true"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="IDLE"/>
@@ -50,7 +51,11 @@
 <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
-<entry key="node-bundle-version" type="xstring" value="2.12.2.0049834"/>
+<entry key="node-bundle-version" type="xstring" value="3.2.1.v201608161059"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-feature-version" type="xstring" value="3.2.1.v201608190927"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Scorer"/>
 <entry key="hasContent" type="xboolean" value="false"/>

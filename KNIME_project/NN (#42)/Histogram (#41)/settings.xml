@@ -34,7 +34,7 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="noOfBins" type="xint" value="50"/>
+<entry key="noOfBins" type="xint" value="20"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="EXECUTED"/>
@@ -43,7 +43,11 @@
 <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
-<entry key="node-bundle-version" type="xstring" value="2.12.2.0049834"/>
+<entry key="node-bundle-version" type="xstring" value="3.2.1.v201608161059"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-feature-version" type="xstring" value="3.2.1.v201608190927"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Histogram"/>
 <entry key="hasContent" type="xboolean" value="true"/>
@@ -51,6 +55,6 @@
 <config key="ports"/>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="780ae90a-fbce-424c-a1b5-fcc796b08806"/>
+<entry key="file_store_id" type="xstring" value="915dfa61-c29c-4206-8917-9326779b539b"/>
 </config>
 </config>

@@ -19,6 +19,10 @@
 <entry key="width" type="xint" value="101"/>
 <entry key="height" type="xint" value="15"/>
 <entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="0"/>
+<entry key="defFontSize" type="xint" value="-1"/>
+<entry key="annotation-version" type="xint" value="-1"/>
 <config key="styles"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -28,7 +32,11 @@
 <entry key="node-bundle-name" type="xstring" value="KNIME Math Expression Node"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.ext.jep"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
-<entry key="node-bundle-version" type="xstring" value="2.12.0.0047514"/>
+<entry key="node-bundle-version" type="xstring" value="3.2.0.v201606131354"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Math Expression (JEP)"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.ext.jep.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-feature-version" type="xstring" value="3.2.0.v201606131354"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Math Formula"/>
 <entry key="hasContent" type="xboolean" value="true"/>
@@ -38,12 +46,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 500, Cols: 11"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 502, Cols: 11"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="226a1cb8-1be0-4a24-9bf1-fb5b7c5dd918"/>
+<entry key="file_store_id" type="xstring" value="77ba331b-d6c0-47ee-a760-502b1d051c54"/>
 </config>
 </config>

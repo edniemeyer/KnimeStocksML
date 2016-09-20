@@ -6,11 +6,6 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<config key="column_name_Internals">
-<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
-<entry key="EnabledStatus" type="xboolean" value="true"/>
-</config>
-<entry key="column_name" type="xstring" value="Date"/>
 <config key="timestamp_from_Internals">
 <entry key="SettingsModelID" type="xstring" value="settingsmodel.datetime"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -31,6 +26,11 @@
 <entry key="useTime" type="xboolean" value="false"/>
 <entry key="useMillis" type="xboolean" value="false"/>
 </config>
+<config key="column_name_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="column_name" type="xstring" value="Date"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
 <entry key="state" type="xstring" value="EXECUTED"/>
@@ -39,7 +39,11 @@
 <entry key="node-bundle-name" type="xstring" value="KNIME Time Series Nodes"/>
 <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.timeseries"/>
 <entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
-<entry key="node-bundle-version" type="xstring" value="2.12.0.0047514"/>
+<entry key="node-bundle-version" type="xstring" value="3.2.0.v201606131354"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-feature-version" type="xstring" value="3.2.1.v201608190927"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Extract Time Window"/>
 <entry key="hasContent" type="xboolean" value="true"/>
@@ -49,12 +53,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 500, Cols: 7"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 502, Cols: 7"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="54231da6-41ff-46ef-840e-08e1327e47a2"/>
+<entry key="file_store_id" type="xstring" value="b352d365-6649-4cc0-808b-8652edaad33e"/>
 </config>
 </config>
