@@ -1,5 +1,0 @@
-http://real-chart.finance.yahoo.com/table.csv?s=^bvsp
-http://real-chart.finance.yahoo.com/table.csv?s=^gspc
-real-chart.finance.yahoo.com/table.csv?s=^bvsp
-real-chart.finance.yahoo.com/table.csv?s=%5bvsp
-https://finance.yahoo.com/chart/%5EBVSP

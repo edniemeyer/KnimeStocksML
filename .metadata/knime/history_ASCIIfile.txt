@@ -1,2 +1,0 @@
-knime://knime.workflow/data.all
-knime://knime.workflow/iris.csv
