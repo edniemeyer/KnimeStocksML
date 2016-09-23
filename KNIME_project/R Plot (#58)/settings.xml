@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="figure.ouput.type_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="figure.ouput.type" type="xstring" value="png"/>
+<config key="write.output.file_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="write.output.file" type="xboolean" value="true"/>
+<config key="node.script_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="node.script" type="xstring" value="%%00010%%00010    # 1. Parameter selection%%00010%%00010    %%00010    numAttributeName = &quot;erro&quot;;%%00010    plotTitle&lt;-&quot;my plot&quot;%%00010    bins&lt;-&quot;20&quot;%%00010    color&lt;-&quot;black&quot;%%00010    yScale&lt;-c(&quot;&quot;,&quot;&quot;)%%00010    xScale&lt;-c(&quot;&quot;,&quot;&quot;)%%00010    probability&lt;-TRUE%%00010    drawDensity&lt;-TRUE%%00010    densityColor&lt;-&quot;black&quot;%%00010%%00010    %%00010    # 2. r-code%%00010%%00010    %%00010    numAttribute = eval(parse(text = paste(&quot;kIn$\&quot;&quot;, numAttributeName, &quot;\&quot;&quot;, sep = '')))%%00010    bins &lt;- as.numeric(bins)%%00010%%00010    #define as numbers%%00010    yScale &lt;- as.numeric(yScale)%%00010    xScale &lt;- as.numeric(xScale)%%00010%%00010    #set scales to default and check scales%%00010    if (is.na(yScale[1]) | is.na(yScale[2])) %%00009yScale &lt;- NULL%%00009%%00009#default%%00010    if (is.na(xScale[1]) | is.na(xScale[2])) %%00009xScale &lt;- range(numAttribute)%%00009#default%%00010    if (probability) yScale &lt;- NULL%%00010%%00010    #plot histogram%%00010    hist(numAttribute, density=30.0, angle=45, xlab=numAttributeName, main=plotTitle, breaks = bins, col = color, ylim = yScale, xlim = xScale, freq = !probability)%%00010%%00010    #plot density line%%00010    if (drawDensity) lines(density(numAttribute), col = densityColor)%%00010%%00010    %%00010"/>
+<config key="chunk.in_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="chunk.in" type="xint" value="-1"/>
+<config key="chunk.out_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="chunk.out" type="xint" value="-1"/>
+<config key="figure.output.file_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="figure.output.file" type="xstring" isnull="true" value=""/>
+<config key="overwrite.ok_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="overwrite.ok" type="xboolean" value="false"/>
+<config key="figure.height_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="figure.height" type="xint" value="700"/>
+<config key="figure.width_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="figure.width" type="xint" value="1000"/>
+<config key="open.in_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="open.in" type="xboolean" value="false"/>
+<config key="node.template_Internals">
+<entry key="SettingsModelID" type="xstring" value="SMID_string"/>
+<entry key="EnabledStatus" type="xboolean" value="true"/>
+</config>
+<entry key="node.template" type="xstring" value="&lt;de.mpicbg.knime.scripting.core.rgg.wizard.ScriptTemplate&gt;%%00010  &lt;scriptingLanguage&gt;&lt;/scriptingLanguage&gt;%%00010  &lt;author&gt;Holger Brandl, Martin Stoeter&lt;/author&gt;%%00010  &lt;categories&gt;%%00010    &lt;string&gt; basic&lt;/string&gt;%%00010    &lt;string&gt;histograms&lt;/string&gt;%%00010  &lt;/categories&gt;%%00010  &lt;description&gt;Displays a histogram (distribution) of a numerical attribute.%%00010Allows modification of bins, axis, color, and optional probability density%%00010%%00010Options:%%00010- set number of bins: (default: 15)%%00010- set the x and y-axis limits (default: none (=automatic); min AND max values are neccessary, if you want to set limits)%%00010- y-axis is probability density (default: false (=frequency)%%00010- plot density line (default: false)%%00010- set color of histogram or line (default: black; see colors here http://research.stowers-institute.org/efg/R/Color/Chart/)&lt;/description&gt;%%00010  &lt;template&gt;&amp;lt;rgg&amp;gt;%%00010%%00010    &amp;lt;!--1. Title and short description --&amp;gt;%%00010%%00010    &amp;lt;h3 text=&amp;quot;Histogram&amp;quot; aligment=&amp;quot;center&amp;quot; span=&amp;quot;full&amp;quot;/&amp;gt;%%00010%%00010    &amp;lt;separator label=&amp;quot;Description&amp;quot; span=&amp;quot;full&amp;quot;/&amp;gt;%%00010    &amp;lt;labelarea span=&amp;quot;full&amp;quot;&amp;gt;Displays a histogram (distribution) of a numerical attribute.%%00010Allows modification of bins, axis, color, and optional probability density%%00010%%00010Options:%%00010- set number of bins: (default: 15)%%00010- set the x and y-axis limits (default: none (=automatic); min AND max values are neccessary, if you want to set limits)%%00010- y-axis is probability density (default: false (=frequency)%%00010- plot density line (default: false)%%00010- set color of histogram or line (default: black; see colors here http://research.stowers-institute.org/efg/R/Color/Chart/)&amp;lt;/labelarea&amp;gt;%%00010    &amp;lt;gaprow height=&amp;quot;1&amp;quot;/&amp;gt;%%00010%%00010    &amp;lt;!-- 2. Configuration--&amp;gt;%%00010%%00010    &amp;lt;separator label=&amp;quot;Options&amp;quot; span=&amp;quot;full&amp;quot;/&amp;gt;%%00010    &amp;lt;gaprow height=&amp;quot;2&amp;quot;/&amp;gt;%%00010%%00010    # 1. Parameter selection%%00010%%00010    &amp;lt;group&amp;gt;%%00010%%00010    numAttributeName = &amp;lt;combobox items=&amp;quot;$$$NUM_ATTRIBUTES$$$&amp;quot; label=&amp;quot;Variable of interest&amp;quot;/&amp;gt;;%%00010    &amp;lt;textfield label=&amp;quot;Title of the plot:&amp;quot; var=&amp;quot;plotTitle&amp;quot; data-type=&amp;quot;text&amp;quot; default-value= &amp;quot;my plot&amp;quot; size=&amp;quot;10&amp;quot; span=&amp;quot;full&amp;quot;/&amp;gt;%%00010    &amp;lt;textfield label=&amp;quot;Number of bins:&amp;quot; var=&amp;quot;bins&amp;quot; data-type=&amp;quot;number&amp;quot; default-value=&amp;quot;15&amp;quot;/&amp;gt;%%00010    &amp;lt;textfield label=&amp;quot;Color of histogram:&amp;quot; var=&amp;quot;color&amp;quot; data-type=&amp;quot;text&amp;quot; default-value= &amp;quot;black&amp;quot; size=&amp;quot;5&amp;quot;/&amp;gt;%%00010    &amp;lt;vector label=&amp;quot;y-axis scale:&amp;quot; var=&amp;quot;yScale&amp;quot; size=&amp;quot;2&amp;quot; vector-type=&amp;quot;character&amp;quot;/&amp;gt;%%00010    &amp;lt;vector label=&amp;quot;x-axis scale:&amp;quot; var=&amp;quot;xScale&amp;quot; size=&amp;quot;2&amp;quot; vector-type=&amp;quot;character&amp;quot;/&amp;gt;%%00010    &amp;lt;checkbox label=&amp;quot;Probability density&amp;quot; var=&amp;quot;probability&amp;quot; selected=&amp;quot;false&amp;quot;/&amp;gt;%%00010    &amp;lt;checkbox label=&amp;quot;Draw density&amp;quot; var=&amp;quot;drawDensity&amp;quot; selected=&amp;quot;false&amp;quot;/&amp;gt;%%00010    &amp;lt;textfield label=&amp;quot;Color of density line:&amp;quot; var=&amp;quot;densityColor&amp;quot; data-type=&amp;quot;text&amp;quot; default-value= &amp;quot;black&amp;quot; size=&amp;quot;5&amp;quot;/&amp;gt;%%00010%%00010    &amp;lt;/group&amp;gt;%%00010%%00010%%00010    # 2. r-code%%00010%%00010    &amp;lt;![CDATA[%%00010    numAttribute = eval(parse(text = paste(&amp;quot;kIn$\&amp;quot;&amp;quot;, numAttributeName, &amp;quot;\&amp;quot;&amp;quot;, sep = &amp;apos;&amp;apos;)))%%00010    bins &amp;lt;- as.numeric(bins)%%00010%%00010    #define as numbers%%00010    yScale &amp;lt;- as.numeric(yScale)%%00010    xScale &amp;lt;- as.numeric(xScale)%%00010%%00010    #set scales to default and check scales%%00010    if (is.na(yScale[1]) | is.na(yScale[2])) %%00009yScale &amp;lt;- NULL%%00009%%00009#default%%00010    if (is.na(xScale[1]) | is.na(xScale[2])) %%00009xScale &amp;lt;- range(numAttribute)%%00009#default%%00010    if (probability) yScale &amp;lt;- NULL%%00010%%00010    #plot histogram%%00010    hist(numAttribute, density=30.0, angle=45, xlab=numAttributeName, main=plotTitle, breaks = bins, col = color, ylim = yScale, xlim = xScale, freq = !probability)%%00010%%00010    #plot density line%%00010    if (drawDensity) lines(density(numAttribute), col = densityColor)%%00010%%00010    ]]&amp;gt;%%00010%%00010&amp;lt;/rgg&amp;gt;&lt;/template&gt;%%00010  &lt;persistedConfig&gt;%%00010    &lt;entry&gt;%%00010      &lt;string&gt;y-axis scale:&lt;/string&gt;%%00010      &lt;list&gt;%%00010        &lt;string&gt;&lt;/string&gt;%%00010        &lt;string&gt;&lt;/string&gt;%%00010      &lt;/list&gt;%%00010    &lt;/entry&gt;%%00010    &lt;entry&gt;%%00010      &lt;string&gt;Probability density&lt;/string&gt;%%00010      &lt;boolean&gt;true&lt;/boolean&gt;%%00010    &lt;/entry&gt;%%00010    &lt;entry&gt;%%00010      &lt;string&gt;Draw density&lt;/string&gt;%%00010      &lt;boolean&gt;true&lt;/boolean&gt;%%00010    &lt;/entry&gt;%%00010    &lt;entry&gt;%%00010      &lt;string&gt;Number of bins:&lt;/string&gt;%%00010      &lt;string&gt;20&lt;/string&gt;%%00010    &lt;/entry&gt;%%00010    &lt;entry&gt;%%00010      &lt;string&gt;x-axis scale:&lt;/string&gt;%%00010      &lt;list&gt;%%00010        &lt;string&gt;&lt;/string&gt;%%00010        &lt;string&gt;&lt;/string&gt;%%00010      &lt;/list&gt;%%00010    &lt;/entry&gt;%%00010    &lt;entry&gt;%%00010      &lt;string&gt;Color of density line:&lt;/string&gt;%%00010      &lt;string&gt;black&lt;/string&gt;%%00010    &lt;/entry&gt;%%00010    &lt;entry&gt;%%00010      &lt;string&gt;Color of histogram:&lt;/string&gt;%%00010      &lt;string&gt;black&lt;/string&gt;%%00010    &lt;/entry&gt;%%00010    &lt;entry&gt;%%00010      &lt;string&gt;Title of the plot:&lt;/string&gt;%%00010      &lt;string&gt;my plot&lt;/string&gt;%%00010    &lt;/entry&gt;%%00010    &lt;entry&gt;%%00010      &lt;string&gt;Variable of interest&lt;/string&gt;%%00010      &lt;string&gt;erro&lt;/string&gt;%%00010    &lt;/entry&gt;%%00010  &lt;/persistedConfig&gt;%%00010  &lt;name&gt;Histogram&lt;/name&gt;%%00010  &lt;linkedToScript&gt;true&lt;/linkedToScript&gt;%%00010  &lt;previewURL&gt;https://raw.githubusercontent.com/knime-mpicbg/scripting-templates/master/knime-scripting-templates/R/simple_histogram.png&lt;/previewURL&gt;%%00010  &lt;templateURL&gt;https://raw.githubusercontent.com/knime-mpicbg/scripting-templates/master/knime-scripting-templates/R/figure-templates.txt&lt;/templateURL&gt;%%00010&lt;/de.mpicbg.knime.scripting.core.rgg.wizard.ScriptTemplate&gt;"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="CONFIGURED"/>
+<entry key="factory" type="xstring" value="de.mpicbg.knime.scripting.r.node.plot.RPlotNodeFactory"/>
+<entry key="node-name" type="xstring" value="R Plot"/>
+<entry key="node-bundle-name" type="xstring" value="RSnippet-Node extension for KNIME Workbench"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="de.mpicbg.knime.scripting.r"/>
+<entry key="node-bundle-vendor" type="xstring" value="Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)"/>
+<entry key="node-bundle-version" type="xstring" value="3.1.103.v201607041324"/>
+<entry key="node-feature-name" type="xstring" value="KNIME R Scripting extension"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="de.mpicbg.tds.knime.scripting.r.feature.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="Max Planck Institute of Molecular Cell Biology and Genetics (MPI-CBG)"/>
+<entry key="node-feature-version" type="xstring" value="3.1.103.v201607041324"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="R Plot"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
