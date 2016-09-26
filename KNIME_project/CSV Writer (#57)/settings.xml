@@ -20,7 +20,7 @@
 <entry key="lineEndingMode" type="xstring" value="SYST"/>
 <entry key="charSet" type="xstring" isnull="true" value=""/>
 <entry key="filename" type="xstring" value="C:\SPB_Data\mestrado\previsao-erro-normalizado-NN-Ibov.csv"/>
-<entry key="fileOverwritePolicy" type="xstring" value="Abort"/>
+<entry key="fileOverwritePolicy" type="xstring" value="Overwrite"/>
 <entry key="skipWriteColHeaderOnAppend" type="xboolean" value="false"/>
 <entry key="commentBegin" type="xstring" value=""/>
 <entry key="commentEnd" type="xstring" value=""/>
@@ -31,11 +31,7 @@
 <entry key="gzip" type="xboolean" value="false"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="IDLE"/>
-<config key="nodecontainer_message">
-<entry key="type" type="xstring" value="WARNING"/>
-<entry key="message" type="xstring" value="Output file 'C:\SPB_Data\mestrado\previsao-erro-normalizado-NN-Ibov.csv' exists and must not be overwritten due to user settings"/>
-</config>
+<entry key="state" type="xstring" value="EXECUTED"/>
 <entry key="factory" type="xstring" value="org.knime.base.node.io.csvwriter.CSVWriterNodeFactory"/>
 <entry key="node-name" type="xstring" value="CSV Writer"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -48,11 +44,11 @@
 <entry key="node-feature-version" type="xstring" value="3.2.1.v201608190927"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="CSV Writer"/>
-<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="hasContent" type="xboolean" value="true"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports"/>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" value="fa50d73f-8230-4d5e-98b0-8fa865403b69"/>
 </config>
 </config>
