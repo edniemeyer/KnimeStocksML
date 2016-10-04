@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="script" type="xstring" value="library(rugarch)%%00010%%00010#ss &lt;- knime.in$&quot;Close&quot;%%00010#outOfSample = (NROW(ss)/5) -1#20 percent for test %%00010%%00010#spec &lt;- ugarchspec(mean.model=list(armaOrder=c(0,0)), %%00010#%%00009variance.model = list(model=&quot;fGARCH&quot;, submodel=&quot;GARCH&quot;, garchOrder=c(1,1)))%%00010spec &lt;- ugarchspec()%%00010%%00010knime.in$&quot;Prediction&quot; &lt;- 0%%00010%%00010for(i in 1:NROW(knime.in)){%%00010%%00009mod &lt;- try(fit &lt;- ugarchfit(spec=spec, solver=&quot;hybrid&quot;, data= as.numeric(t(knime.in[i,(NCOL(knime.in)-1):2]))))%%00010%%00009if(!is(mod,'try-error'))%%00010%%00009%%00009knime.in[i, &quot;Prediction&quot;]&lt;- fitted(ugarchforecast(fit, n.ahead=1))%%00010%%00009}%%00010%%00010#fit &lt;- ugarchfit(spec=spec, data=ss, out.sample=outOfSample)%%00010#fore &lt;- ugarchforecast(fit, n.ahead=1, n.roll=outOfSample)%%00010%%00010#plot(fore,which=2)%%00010%%00010#knime.out &lt;- t(mapply(c,fitted(fore),sigma(fore)))%%00010knime.out &lt;- knime.in"/>
+<entry key="templateUUID" type="xstring" isnull="true" value=""/>
+<entry key="version" type="xstring" value="version 1.x"/>
+<entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="factory" type="xstring" value="org.knime.r.RSnippetNodeFactory"/>
+<entry key="node-name" type="xstring" value="R Snippet"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME R-Project nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.r"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-bundle-version" type="xstring" value="3.2.0.v201607011540"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Interactive R Statistics Integration"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.r.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-feature-version" type="xstring" value="3.2.0.v201607011540"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="R Snippet"/>
+<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+<entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 241, Cols: 102"/>
+<entry key="port_dir_location" type="xstring" value="port_1"/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" value="5c8d39a4-4373-44b2-8456-d6b1b49c9190"/>
+</config>
+</config>

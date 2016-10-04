@@ -10,7 +10,7 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="maxiter" type="xint" value="100"/>
+<entry key="maxiter" type="xint" value="1000"/>
 <config key="hiddenlayer_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -20,7 +20,7 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="nrhiddenneurons" type="xint" value="10"/>
+<entry key="nrhiddenneurons" type="xint" value="50"/>
 <config key="classcol_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -38,7 +38,7 @@
 <entry key="useRandomSeed" type="xboolean" value="false"/>
 <config key="randomSeed_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
-<entry key="EnabledStatus" type="xboolean" value="true"/>
+<entry key="EnabledStatus" type="xboolean" value="false"/>
 </config>
 <entry key="randomSeed" type="xint" value="1099240263"/>
 </config>
@@ -71,6 +71,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="347c2c1e-18e7-46c9-91aa-38e477368000"/>
+<entry key="file_store_id" type="xstring" value="b754889a-d2ac-40b9-9cde-5fa740e623ec"/>
 </config>
 </config>
