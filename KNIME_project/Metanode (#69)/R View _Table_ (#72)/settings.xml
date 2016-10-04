@@ -12,7 +12,7 @@
 <entry key="Image background color" type="xstring" value="#ffffff"/>
 <entry key="Text point size" type="xint" value="12"/>
 <config key="R settings">
-<entry key="script" type="xstring" value="library(rugarch)%%00010%%00010ss &lt;- knime.in$&quot;Close&quot;%%00010outOfSample = NROW(ss)/5 #20 percent for test %%00010%%00010%%00010#spec &lt;- ugarchspec(mean.model=list(armaOrder=c(0,0)), %%00010#%%00009variance.model = list(model=&quot;fGARCH&quot;, submodel=&quot;GARCH&quot;, garchOrder=c(1,1)))%%00010spec &lt;- ugarchspec()%%00010%%00010fit &lt;- ugarchfit(spec=spec, data=ss, out.sample=outOfSample)%%00010fore &lt;- ugarchforecast(fit, n.ahead=1, n.roll=outOfSample)%%00010%%00010plot(fore,which=2)"/>
+<entry key="script" type="xstring" value="hist(knime.in$&quot;erro&quot;, probability = TRUE, breaks = 20);%%00010lines(density(knime.in$&quot;erro&quot;),col=&quot;red&quot;);"/>
 <entry key="templateUUID" type="xstring" isnull="true" value=""/>
 <entry key="version" type="xstring" value="version 1.x"/>
 <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
@@ -39,7 +39,7 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.image.ImagePortObjectSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.port.image.ImagePortObject"/>
-<entry key="port_object_summary" type="xstring" value="PNG Image 640 x 640 with 13 KB"/>
+<entry key="port_object_summary" type="xstring" value="PNG Image 640 x 640 with 6 KB"/>
 <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
 <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -47,6 +47,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="c9e71017-8bbc-411f-8e02-075e9d8fe86c"/>
+<entry key="file_store_id" type="xstring" value="82644f23-504f-4b70-bb1e-64e19a020251"/>
 </config>
 </config>

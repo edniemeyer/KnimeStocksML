@@ -6,7 +6,7 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="script" type="xstring" value="library(rugarch)%%00010%%00010ss &lt;- knime.in$&quot;Close&quot;%%00010outOfSample = (NROW(ss)/5) -1#20 percent for test %%00010%%00010%%00010#spec &lt;- ugarchspec(mean.model=list(armaOrder=c(0,0)), %%00010#%%00009variance.model = list(model=&quot;fGARCH&quot;, submodel=&quot;GARCH&quot;, garchOrder=c(1,1)))%%00010spec &lt;- ugarchspec()%%00010%%00010fit &lt;- ugarchfit(spec=spec, data=ss, out.sample=outOfSample)%%00010fore &lt;- ugarchforecast(fit, n.ahead=1, n.roll=outOfSample)%%00010%%00010#plot(fore,which=2)%%00010%%00010knime.out &lt;- t(mapply(c,fitted(fore),sigma(fore)))"/>
+<entry key="script" type="xstring" value="library(rugarch)%%00010%%00010#ss &lt;- knime.in$&quot;Close&quot;%%00010#outOfSample = (NROW(ss)/5) -1#20 percent for test %%00010%%00010#spec &lt;- ugarchspec(mean.model=list(armaOrder=c(0,0)), %%00010#%%00009variance.model = list(model=&quot;fGARCH&quot;, submodel=&quot;GARCH&quot;, garchOrder=c(1,1)))%%00010spec &lt;- ugarchspec()%%00010%%00010knime.in$&quot;Prediction&quot; &lt;- 0%%00010%%00010for(i in 1:NROW(knime.in)){%%00010%%00009mod &lt;- try(fit &lt;- ugarchfit(spec=spec, solver=&quot;hybrid&quot;, data= as.numeric(t(knime.in[i,(NCOL(knime.in)-1):2]))))%%00010%%00009if(!is(mod,'try-error'))%%00010%%00009%%00009knime.in[i, &quot;Prediction&quot;]&lt;- fitted(ugarchforecast(fit, n.ahead=1))%%00010%%00009}%%00010%%00010#fit &lt;- ugarchfit(spec=spec, data=ss, out.sample=outOfSample)%%00010#fore &lt;- ugarchforecast(fit, n.ahead=1, n.roll=outOfSample)%%00010%%00010#plot(fore,which=2)%%00010%%00010#knime.out &lt;- t(mapply(c,fitted(fore),sigma(fore)))%%00010knime.out &lt;- knime.in"/>
 <entry key="templateUUID" type="xstring" isnull="true" value=""/>
 <entry key="version" type="xstring" value="version 1.x"/>
 <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
@@ -32,12 +32,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 248, Cols: 2"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 1154, Cols: 102"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="c49de41d-83cf-415c-8964-03125615a373"/>
+<entry key="file_store_id" type="xstring" value="72b06b0a-f3ce-4e27-9aa8-31d2e5d9b0f5"/>
 </config>
 </config>

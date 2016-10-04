@@ -6,8 +6,8 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="expression" type="xstring" value="$Close(-2)$-COL_MIN($Close$)"/>
-<entry key="replaced_column" type="xstring" value="Close(-2)"/>
+<entry key="expression" type="xstring" value="$Close(-1)$-$Close$"/>
+<entry key="replaced_column" type="xstring" value="erro"/>
 <entry key="append_column" type="xboolean" value="true"/>
 <entry key="convert_to_int" type="xboolean" value="false"/>
 </config>
@@ -32,12 +32,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 248, Cols: 5"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 231, Cols: 3"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="c13c616a-1251-4513-894d-8a93d42d29d9"/>
+<entry key="file_store_id" type="xstring" value="112eb02e-bb54-4463-91c9-303532bc382c"/>
 </config>
 </config>

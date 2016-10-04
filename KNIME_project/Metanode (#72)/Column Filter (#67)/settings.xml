@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<config key="column-filter">
+<entry key="filter-type" type="xstring" value="STANDARD"/>
+<config key="included_names">
+<entry key="array-size" type="xint" value="101"/>
+<entry key="0" type="xstring" value="Close"/>
+<entry key="1" type="xstring" value="Close(-1)"/>
+<entry key="2" type="xstring" value="Close(-2)"/>
+<entry key="3" type="xstring" value="Close(-3)"/>
+<entry key="4" type="xstring" value="Close(-4)"/>
+<entry key="5" type="xstring" value="Close(-5)"/>
+<entry key="6" type="xstring" value="Close(-6)"/>
+<entry key="7" type="xstring" value="Close(-7)"/>
+<entry key="8" type="xstring" value="Close(-8)"/>
+<entry key="9" type="xstring" value="Close(-9)"/>
+<entry key="10" type="xstring" value="Close(-10)"/>
+<entry key="11" type="xstring" value="Close(-11)"/>
+<entry key="12" type="xstring" value="Close(-12)"/>
+<entry key="13" type="xstring" value="Close(-13)"/>
+<entry key="14" type="xstring" value="Close(-14)"/>
+<entry key="15" type="xstring" value="Close(-15)"/>
+<entry key="16" type="xstring" value="Close(-16)"/>
+<entry key="17" type="xstring" value="Close(-17)"/>
+<entry key="18" type="xstring" value="Close(-18)"/>
+<entry key="19" type="xstring" value="Close(-19)"/>
+<entry key="20" type="xstring" value="Close(-20)"/>
+<entry key="21" type="xstring" value="Close(-21)"/>
+<entry key="22" type="xstring" value="Close(-22)"/>
+<entry key="23" type="xstring" value="Close(-23)"/>
+<entry key="24" type="xstring" value="Close(-24)"/>
+<entry key="25" type="xstring" value="Close(-25)"/>
+<entry key="26" type="xstring" value="Close(-26)"/>
+<entry key="27" type="xstring" value="Close(-27)"/>
+<entry key="28" type="xstring" value="Close(-28)"/>
+<entry key="29" type="xstring" value="Close(-29)"/>
+<entry key="30" type="xstring" value="Close(-30)"/>
+<entry key="31" type="xstring" value="Close(-31)"/>
+<entry key="32" type="xstring" value="Close(-32)"/>
+<entry key="33" type="xstring" value="Close(-33)"/>
+<entry key="34" type="xstring" value="Close(-34)"/>
+<entry key="35" type="xstring" value="Close(-35)"/>
+<entry key="36" type="xstring" value="Close(-36)"/>
+<entry key="37" type="xstring" value="Close(-37)"/>
+<entry key="38" type="xstring" value="Close(-38)"/>
+<entry key="39" type="xstring" value="Close(-39)"/>
+<entry key="40" type="xstring" value="Close(-40)"/>
+<entry key="41" type="xstring" value="Close(-41)"/>
+<entry key="42" type="xstring" value="Close(-42)"/>
+<entry key="43" type="xstring" value="Close(-43)"/>
+<entry key="44" type="xstring" value="Close(-44)"/>
+<entry key="45" type="xstring" value="Close(-45)"/>
+<entry key="46" type="xstring" value="Close(-46)"/>
+<entry key="47" type="xstring" value="Close(-47)"/>
+<entry key="48" type="xstring" value="Close(-48)"/>
+<entry key="49" type="xstring" value="Close(-49)"/>
+<entry key="50" type="xstring" value="Close(-50)"/>
+<entry key="51" type="xstring" value="Close(-51)"/>
+<entry key="52" type="xstring" value="Close(-52)"/>
+<entry key="53" type="xstring" value="Close(-53)"/>
+<entry key="54" type="xstring" value="Close(-54)"/>
+<entry key="55" type="xstring" value="Close(-55)"/>
+<entry key="56" type="xstring" value="Close(-56)"/>
+<entry key="57" type="xstring" value="Close(-57)"/>
+<entry key="58" type="xstring" value="Close(-58)"/>
+<entry key="59" type="xstring" value="Close(-59)"/>
+<entry key="60" type="xstring" value="Close(-60)"/>
+<entry key="61" type="xstring" value="Close(-61)"/>
+<entry key="62" type="xstring" value="Close(-62)"/>
+<entry key="63" type="xstring" value="Close(-63)"/>
+<entry key="64" type="xstring" value="Close(-64)"/>
+<entry key="65" type="xstring" value="Close(-65)"/>
+<entry key="66" type="xstring" value="Close(-66)"/>
+<entry key="67" type="xstring" value="Close(-67)"/>
+<entry key="68" type="xstring" value="Close(-68)"/>
+<entry key="69" type="xstring" value="Close(-69)"/>
+<entry key="70" type="xstring" value="Close(-70)"/>
+<entry key="71" type="xstring" value="Close(-71)"/>
+<entry key="72" type="xstring" value="Close(-72)"/>
+<entry key="73" type="xstring" value="Close(-73)"/>
+<entry key="74" type="xstring" value="Close(-74)"/>
+<entry key="75" type="xstring" value="Close(-75)"/>
+<entry key="76" type="xstring" value="Close(-76)"/>
+<entry key="77" type="xstring" value="Close(-77)"/>
+<entry key="78" type="xstring" value="Close(-78)"/>
+<entry key="79" type="xstring" value="Close(-79)"/>
+<entry key="80" type="xstring" value="Close(-80)"/>
+<entry key="81" type="xstring" value="Close(-81)"/>
+<entry key="82" type="xstring" value="Close(-82)"/>
+<entry key="83" type="xstring" value="Close(-83)"/>
+<entry key="84" type="xstring" value="Close(-84)"/>
+<entry key="85" type="xstring" value="Close(-85)"/>
+<entry key="86" type="xstring" value="Close(-86)"/>
+<entry key="87" type="xstring" value="Close(-87)"/>
+<entry key="88" type="xstring" value="Close(-88)"/>
+<entry key="89" type="xstring" value="Close(-89)"/>
+<entry key="90" type="xstring" value="Close(-90)"/>
+<entry key="91" type="xstring" value="Close(-91)"/>
+<entry key="92" type="xstring" value="Close(-92)"/>
+<entry key="93" type="xstring" value="Close(-93)"/>
+<entry key="94" type="xstring" value="Close(-94)"/>
+<entry key="95" type="xstring" value="Close(-95)"/>
+<entry key="96" type="xstring" value="Close(-96)"/>
+<entry key="97" type="xstring" value="Close(-97)"/>
+<entry key="98" type="xstring" value="Close(-98)"/>
+<entry key="99" type="xstring" value="Close(-99)"/>
+<entry key="100" type="xstring" value="Close(-100)"/>
+</config>
+<config key="excluded_names">
+<entry key="array-size" type="xint" value="2"/>
+<entry key="0" type="xstring" value="Open"/>
+<entry key="1" type="xstring" value="MA(Close)"/>
+</config>
+<entry key="enforce_option" type="xstring" value="EnforceExclusion"/>
+<config key="name_pattern">
+<entry key="pattern" type="xstring" value=""/>
+<entry key="type" type="xstring" value="Wildcard"/>
+<entry key="caseSensitive" type="xboolean" value="true"/>
+</config>
+<config key="datatype">
+<config key="typelist">
+<entry key="org.knime.core.data.BooleanValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.date.DateAndTimeValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.DoubleValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.IntValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.LongValue" type="xboolean" value="false"/>
+<entry key="org.knime.core.data.StringValue" type="xboolean" value="false"/>
+</config>
+</config>
+</config>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="dados de teste"/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="197"/>
+<entry key="y-coordinate" type="xint" value="677"/>
+<entry key="width" type="xint" value="106"/>
+<entry key="height" type="xint" value="15"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="9"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="EXECUTED"/>
+<entry key="factory" type="xstring" value="org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory"/>
+<entry key="node-name" type="xstring" value="Column Filter"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-bundle-version" type="xstring" value="3.2.1.v201608161059"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-feature-version" type="xstring" value="3.2.1.v201608190927"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Column Filter"/>
+<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+<entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 232, Cols: 103"/>
+<entry key="port_dir_location" type="xstring" value="port_1"/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" value="43f76a9a-fd3a-4246-a37f-6762da6763c5"/>
+</config>
+</config>

@@ -20,7 +20,7 @@
 </config>
 <config key="predicted">
 <entry key="useRowID" type="xboolean" value="false"/>
-<entry key="columnName" type="xstring" value="X1"/>
+<entry key="columnName" type="xstring" value="Prediction"/>
 </config>
 <config key="override default output name_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_boolean"/>
@@ -31,7 +31,7 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="false"/>
 </config>
-<entry key="output column" type="xstring" value="X1"/>
+<entry key="output column" type="xstring" value="Prediction"/>
 <config key="name prefix for flowvars_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="false"/>
@@ -70,6 +70,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="8dd1da0c-676d-427a-8f29-921a9a7df0d5"/>
+<entry key="file_store_id" type="xstring" value="03ae1197-e71e-402f-bc9d-c563436ef05e"/>
 </config>
 </config>

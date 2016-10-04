@@ -8,7 +8,7 @@
 <config key="model">
 <entry key="append_column" type="xboolean" value="false"/>
 <entry key="replaced_column" type="xstring" value="erro"/>
-<entry key="expression" type="xstring" value="$Close$-$X1$"/>
+<entry key="expression" type="xstring" value="$Close$-$Prediction$"/>
 <entry key="convert_to_int" type="xboolean" value="false"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -32,12 +32,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 248, Cols: 11"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 1152, Cols: 103"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="3d4d157c-ba0f-44cb-ab71-b68c79572da8"/>
+<entry key="file_store_id" type="xstring" value="627437c5-63c4-474a-80f8-d5eafd36794c"/>
 </config>
 </config>
