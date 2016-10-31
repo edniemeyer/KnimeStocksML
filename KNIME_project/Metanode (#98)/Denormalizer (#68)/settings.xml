@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model"/>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="EXECUTED"/>
+<config key="nodecontainer_message">
+<entry key="type" type="xstring" value="WARNING"/>
+<entry key="message" type="xstring" value="Normalization was not applied to 101 column(s) as they do not exist in the table: [Close(-69), Close(-57), Close(-45), Close(-33), Close(-21), Close(-97), Close(-85), Close(-29), Close(-17), Close(-8), Close(-73), Close(-61), Close(-58), Close(-46), Close(-34), Close(-22), Close(-10), Close(-98), Close(-86), Close(-74), Close(-18), Close(-9), Close(-62), Close(-50), Close(-90), Close(-15), Close(-79), Close(-67), Close(-55), Close(-43), Close(-31), Close(-39), Open, Close(-2), Close(-27), MA(Close), Close(-95), Close(-83), Close(-71), Close(-68), Close(-56), Close(-44), Close(-32), Close(-20), Close(-96), Close(-3), Close(-28), Close(-16), Close(-84), Close(-72), Close(-60), Close(-37), Close(-25), Close(-13), Close(-89), Close(-77), Close(-65), Close(-53), Close(-41), Close(-4), Close(-49), Close(-93), Close(-81), Close(-26), Close(-14), Close(-78), Close(-66), Close(-54), Close(-42), Close(-30), Close(-5), Close(-38), Close(-94), Close(-82), Close(-70), Close(-59), Close(-47), Close(-35), Close(-23), Close(-11), Close(-99), Close(-87), Close(-75), Close(-63), Close(-6), Close(-19), Close(-51), Close(-91), Close(-48), Close(-36), Close(-24), Close(-12), Close(-88), Close(-76), Close(-64), Close(-52), Close(-100), Close(-7), Close(-40), Close(-92), Close(-80)]"/>
+</config>
+<entry key="factory" type="xstring" value="org.knime.base.node.preproc.normalize.NormalizerDeNodeFactory"/>
+<entry key="node-name" type="xstring" value="Denormalizer"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.base"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-bundle-version" type="xstring" value="3.2.1.v201608161059"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Core"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.base.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-feature-version" type="xstring" value="3.2.1.v201608190927"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Denormalizer"/>
+<entry key="hasContent" type="xboolean" value="true"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
+<entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 231, Cols: 4"/>
+<entry key="port_dir_location" type="xstring" value="port_1"/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" value="abbb1e8c-b808-4342-884a-5788380f6ea0"/>
+</config>
+</config>
