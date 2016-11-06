@@ -19,7 +19,7 @@
 <entry key="decimalSeparator" type="xchar" value="."/>
 <entry key="lineEndingMode" type="xstring" value="SYST"/>
 <entry key="charSet" type="xstring" isnull="true" value=""/>
-<entry key="filename" type="xstring" value="C:\SPB_Data\mestrado\previsao-erro-normalizado-NN-Ibov.csv"/>
+<entry key="filename" type="xstring" value="C:\SPB_Data\mestrado\previsao-erro-normalizado-NN-Ibov-max.csv"/>
 <entry key="fileOverwritePolicy" type="xstring" value="Overwrite"/>
 <entry key="skipWriteColHeaderOnAppend" type="xboolean" value="false"/>
 <entry key="commentBegin" type="xstring" value=""/>
@@ -49,6 +49,6 @@
 <config key="ports"/>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="660a3386-a2a7-480b-bf7a-791bf0927c26"/>
+<entry key="file_store_id" type="xstring" value="254dc30e-4995-43d1-aaca-6ef093613243"/>
 </config>
 </config>

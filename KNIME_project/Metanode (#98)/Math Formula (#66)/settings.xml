@@ -6,9 +6,9 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="append_column" type="xboolean" value="true"/>
-<entry key="replaced_column" type="xstring" value="erro"/>
 <entry key="expression" type="xstring" value="$Close(-1)$-$High$"/>
+<entry key="replaced_column" type="xstring" value="erro"/>
+<entry key="append_column" type="xboolean" value="true"/>
 <entry key="convert_to_int" type="xboolean" value="false"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -32,12 +32,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 231, Cols: 4"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 409, Cols: 30"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="af5a6e46-c89f-4116-b638-66da4c671256"/>
+<entry key="file_store_id" type="xstring" value="96b23f41-b2d1-4b39-aec4-75ebd9b4def3"/>
 </config>
 </config>

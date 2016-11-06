@@ -12,7 +12,7 @@
 </config>
 <config key="reference">
 <entry key="useRowID" type="xboolean" value="false"/>
-<entry key="columnName" type="xstring" value="Close"/>
+<entry key="columnName" type="xstring" value="High"/>
 </config>
 <config key="predicted_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
@@ -70,6 +70,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="1ed37d5e-4881-474e-ac17-fedeacf72ad0"/>
+<entry key="file_store_id" type="xstring" value="3086e6a8-1e94-4f60-bf40-7ea0d2edc325"/>
 </config>
 </config>

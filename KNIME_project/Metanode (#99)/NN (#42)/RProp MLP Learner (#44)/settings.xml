@@ -20,7 +20,7 @@
 <entry key="SettingsModelID" type="xstring" value="SMID_integer"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
-<entry key="nrhiddenneurons" type="xint" value="50"/>
+<entry key="nrhiddenneurons" type="xint" value="100"/>
 <config key="classcol_Internals">
 <entry key="SettingsModelID" type="xstring" value="SMID_string"/>
 <entry key="EnabledStatus" type="xboolean" value="true"/>
@@ -71,6 +71,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="4aa9ca61-f30d-47f7-8405-fe0f55fa786a"/>
+<entry key="file_store_id" type="xstring" value="7a2778d1-e843-4156-9167-dfee9953162e"/>
 </config>
 </config>

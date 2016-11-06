@@ -16,7 +16,7 @@
 <entry key="EnabledStatus" type="xboolean" value="true"/>
 </config>
 <config key="timestamp_from">
-<entry key="time" type="xlong" value="1314144000000"/>
+<entry key="time" type="xlong" value="1187913600000"/>
 <entry key="useDate" type="xboolean" value="true"/>
 <entry key="useTime" type="xboolean" value="false"/>
 <entry key="useMillis" type="xboolean" value="false"/>
@@ -53,12 +53,12 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.data.DataTableSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.BufferedDataTable"/>
-<entry key="port_object_summary" type="xstring" value="Rows: 1254, Cols: 7"/>
+<entry key="port_object_summary" type="xstring" value="Rows: 2243, Cols: 7"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
 </config>
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="bad3ef8a-2b77-4067-a8f6-d4eb0373c221"/>
+<entry key="file_store_id" type="xstring" value="03f7f020-2e94-4b1a-bd2d-c1552709dcef"/>
 </config>
 </config>

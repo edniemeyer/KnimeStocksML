@@ -37,11 +37,7 @@
 <entry key="noOfBins" type="xint" value="20"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
-<entry key="state" type="xstring" value="IDLE"/>
-<config key="nodecontainer_message">
-<entry key="type" type="xstring" value="WARNING"/>
-<entry key="message" type="xstring" value="Binning column has invalid or no domain"/>
-</config>
+<entry key="state" type="xstring" value="EXECUTED"/>
 <entry key="factory" type="xstring" value="org.knime.base.node.viz.histogram.node.FixedColumnHistogramNodeFactory"/>
 <entry key="node-name" type="xstring" value="Histogram"/>
 <entry key="node-bundle-name" type="xstring" value="KNIME Base Nodes"/>
@@ -54,11 +50,11 @@
 <entry key="node-feature-version" type="xstring" value="3.2.1.v201608190927"/>
 <config key="factory_settings"/>
 <entry key="name" type="xstring" value="Histogram"/>
-<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="hasContent" type="xboolean" value="true"/>
 <entry key="isInactive" type="xboolean" value="false"/>
 <config key="ports"/>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" value="909e80f6-a35a-4e58-8e40-a4068fbf9fd4"/>
 </config>
 </config>
