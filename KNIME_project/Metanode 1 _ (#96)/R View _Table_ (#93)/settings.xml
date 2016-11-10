@@ -12,7 +12,7 @@
 <entry key="Image background color" type="xstring" value="#ffffff"/>
 <entry key="Text point size" type="xint" value="12"/>
 <config key="R settings">
-<entry key="script" type="xstring" value="hist(knime.in$&quot;erro&quot;, probability = TRUE, breaks = 20);%%00010lines(density(knime.in$&quot;erro&quot;),col=&quot;red&quot;);"/>
+<entry key="script" type="xstring" value="binw&lt;-0.01/20;%%00010hist(knime.in$&quot;erro&quot;, probability = TRUE, breaks = seq(min(knime.in$&quot;erro&quot;)-binw,max(knime.in$&quot;erro&quot;)+binw,by=binw));%%00010lines(density(knime.in$&quot;erro&quot;),col=&quot;red&quot;);"/>
 <entry key="templateUUID" type="xstring" isnull="true" value=""/>
 <entry key="version" type="xstring" value="version 1.x"/>
 <entry key="Output non numbers (NaN, Inf, -Inf) as missing cells" type="xboolean" value="false"/>
@@ -39,7 +39,7 @@
 <entry key="index" type="xint" value="1"/>
 <entry key="port_spec_class" type="xstring" value="org.knime.core.node.port.image.ImagePortObjectSpec"/>
 <entry key="port_object_class" type="xstring" value="org.knime.core.node.port.image.ImagePortObject"/>
-<entry key="port_object_summary" type="xstring" value="PNG Image 640 x 640 with 7 KB"/>
+<entry key="port_object_summary" type="xstring" value="PNG Image 640 x 640 with 6 KB"/>
 <entry key="port_spec_location" type="xstring" value="spec/spec.zip"/>
 <entry key="port_object_location" type="xstring" value="object/portobject.zip"/>
 <entry key="port_dir_location" type="xstring" value="port_1"/>
@@ -47,6 +47,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="0f98c82b-9f74-4a97-8f8d-acb30539ed16"/>
+<entry key="file_store_id" type="xstring" value="d3bf5579-eb98-48b2-b2ed-f86802c36845"/>
 </config>
 </config>

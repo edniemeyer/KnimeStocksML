@@ -6,9 +6,9 @@
 <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
 </config>
 <config key="model">
-<entry key="append_column" type="xboolean" value="true"/>
-<entry key="replaced_column" type="xstring" value="Close(-2)"/>
 <entry key="expression" type="xstring" value="$Close(-1)$-$Close$"/>
+<entry key="replaced_column" type="xstring" value="Close(-2)"/>
+<entry key="append_column" type="xboolean" value="true"/>
 <entry key="convert_to_int" type="xboolean" value="false"/>
 </config>
 <entry key="customDescription" type="xstring" isnull="true" value=""/>
@@ -38,6 +38,6 @@
 </config>
 <config key="filestores">
 <entry key="file_store_location" type="xstring" isnull="true" value=""/>
-<entry key="file_store_id" type="xstring" value="dc503d3b-46f0-4ac9-9ed2-8931b8786da8"/>
+<entry key="file_store_id" type="xstring" value="4de3bd7c-a4f2-4301-9063-c646650d975a"/>
 </config>
 </config>
